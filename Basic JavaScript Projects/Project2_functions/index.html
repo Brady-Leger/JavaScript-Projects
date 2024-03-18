@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="JS/main.js"></script>
+</head>
+<body>
+    <p id="Dog1">
+        Push this button to see a dog!
+    </p>
+
+    <br/>
+    <button onclick="show();">Show # characters</button>
+
+    <script>
+        let show = () => {
+            let element = document.getElementById("Dog1");
+            let count = element.innerHTML.length;
+            alert("Character count = " + count);
+        }
+    </script>
+    <p id="Concatenate" onclick = "myFunction()">Click Here!</p> <!--This line calls on the function I made in my JS sheet-->
+</body>
+</html>
