@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html>
 <body>
-<script type ="text/JavaScript" src="Basic JavaScript Projects\Project3_math_operators\JS\main.js"></script>
+    <script type ="text/JavaScript" src="JS\main.js"></script>
+    
+    <p id="Math">What is 3 + 3?</p>
+    <button onclick="myFunction()">Click me</button>
+    
+    <script>
+        function myFunction() {
+            document.getElementById("Math").innerHTML = Math(3,3);
+        }
+    </script>
+    <br/>
+    <p id="Math2">What is 6 - 3?</p>
+    <button onclick="myFunction2()">Click me</button>
+    
+    <script>
+        function myFunction2() {
+            document.getElementById("Math2").innerHTML = Math2(6,3);
+        }
+    </script>
+    
+    <br/>
+    <p id="Math3">What is 6 * 3?</p>
+    <button onclick="myFunction3()">Click me</button>
+    
+    <script>
+        function myFunction3() {
+            document.getElementById("Math3").innerHTML = Math3(6,3);
+        }
+    </script>
+    
+    <p id="Math4">What is 6 / 3?</p>
+    <button onclick="myFunction4()">Click me</button>
+    
+    <script>
+        function myFunction4() {
+            document.getElementById("Math4").innerHTML = Math4(6,3);
+        }
+    </script>
+    
+    <p id="Math5">What is 6 / 3 + 6?</p>
+    <button onclick="myFunction5()">Click me</button>
+    
+    <script>
+        function myFunction5() {
+            document.getElementById("Math5").innerHTML = Math5(6,3,6);
+        }
+    </script>
+    
+    <p id="Math6">When you divide 5 by 2 what is the remainder?</p>
+    <button onclick="myFunction6()">Click me</button>
+    
+    <script>
+        function myFunction6() {
+            document.getElementById("Math6").innerHTML = "When you divide 5 by 2 you have a remainder of: " + Math6();
+        }
+    </script>
 
-<button onclick="myFunction()">Click me</button>
+<p id="Math7">Unary Operator</p>
+<button onclick="Math7()">Click me</button>
 
-<p id="demo"></p>
+<p id="Math8">Increment</p>
+<button onclick="Math8()">Click me</button>
 
+<p id="Math9">Decrement</p>
+<button onclick="Math9()">Click me</button>
+
+<p>What is the cube root of 100?</p>
+<button onclick="Math.cbrt()">Click me</button>
 <script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = Math(3,3);
-}
+    Math.cbrt(CubeRoot);
 </script>
 
 </body>
