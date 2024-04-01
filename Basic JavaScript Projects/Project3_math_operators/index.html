@@ -67,10 +67,12 @@
 <p id="Math9">Decrement</p>
 <button onclick="Math9()">Click me</button>
 
-<p>What is the cube root of 100?</p>
-<button onclick="Math.cbrt()">Click me</button>
+<p id="Math10">What is the cube root of 100?</p>
+<button onclick="myFunction7()">Click me</button>
 <script>
-    Math.cbrt(CubeRoot);
+    function myFunction7() {
+        document.getElementById("Math10").innerHTML = Math6(100);
+    }
 </script>
 
 </body>
