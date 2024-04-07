@@ -23,3 +23,9 @@ function class_Function() {
     }
     document.getElementById("Output").innerHTML = Class_Output;
 }
+
+function hello_World_Function() {
+    var A = document.getElementById("Click");
+    A[0].innerHTML = "The text has changed!";
+}
+

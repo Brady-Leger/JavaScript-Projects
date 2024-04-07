@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="JS/JavaScript_1.js" defer></script>
+</head>
+<body>
+    <h1>What is your favorite class?</h1>
+    <h3>Pick from this list!</h3>
+    <ul>
+        <li>DH</li>
+        <li>DK</li>
+        <li>Hunter</li>
+        <li>Evoker</li>
+        <li>Shaman</li>
+    </ul>
+    <h3>Enter your choice below!</h3>
+    
+    <input id="Class_Input" type="text">
+    <button onclick="class_Function()">Submit choice!</button>
+    <p id="Output"></p>
+    <br>
+    <h1 class="Click">This text will change!</h1>
+    <h3 class="Click">This text will not change!</h3>
+    <button onclick="hello_World_Function()">Click me!</button>
+    <br>
+    <br>
+    <canvas id="First_Canvas" width="500" height="250" style="border: 5px solid black;"></canvas>
+    <script>
+        var c = document.getElementById("First_Canvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "45px Arial";
+        ctx.strokeText("This is my first Canvas!",10, 50);
+        
+    </script>
+</body>
