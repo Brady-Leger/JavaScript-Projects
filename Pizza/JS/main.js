@@ -4,7 +4,7 @@ function getReceipt (){
     var text1 = "<h3> You ordered:</h3>";
     var runningTotal = 0;
     var sizeTotal = 0;
-    var sizeArray = document.getElementById("size");
+    var sizeArray = document.getElementsByClassName("size");
     for (var i = 0; i < sizeArray.length; i++) {
         if (sizeArray[i].checked) {
             var selectedSize = sizeArray[i].value;

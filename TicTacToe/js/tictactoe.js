@@ -34,7 +34,7 @@ function placeXOrO(squareNumber) {
             activePlayer = 'X';
         }
         //This function plays placement sound
-        audio('./media/place.mp3');
+        audio('/media/place.mp3');
         //This conditon checks to see if it is the computers turn
         if (activePlayer === 'O') {
             //This function disables clicking for computers turn
@@ -88,7 +88,7 @@ function checkWinConditions() {
     //The below condition checks for a tie
     else if (selectedSquares.length >= 9) {
         //this function plays the tie sound
-        audio('./media/tie/mp3');
+        audio('/media/tie/mp3');
         setTimeout(function () {resetGame(); }, 500);
     }
     
@@ -101,11 +101,11 @@ function checkWinConditions() {
 }
 
 function disableClick () {
-    body.stlye.pointerEvents = 'none';
+    body.style.pointerEvents = 'none';
     setTimeout(function () { body.style.pointerEvents = 'auto'; }, 1000);
 }
 
-function audtio(audioURL) {
+function audio(audioURL) {
     let audio = new Audio(audioURL);
     audio.play();
 }
@@ -150,7 +150,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     }
     
     disableClick();
-    audio('./media/winGame.mp3');
+    audio('/media/winGame.mp3');
     animateLineDrawing();
     setTimeout(function () { clear(); resetGame(); }, 1000);
     
